@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>Week3 Submission</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Time -->
+        <div id="time" class="box">
+            <h3>Playing time:</h3>
+            <section id="clock"></section>
+        </div>
+
+        <!-- Reset -->
+        <div id="reset" class="box">
+            <p>
+                <button id="resetButton">Reset</button>
+            </p>
+
+            <p>
+                <button id="deleteLocalStorageButton">Delete Local Storage</button>
+            </p>
+            
+        </div>
+
+        <!-- Bakery Name -->
+        <div id="bakeryName" class="box">
+            <section id="showName">
+                <p>
+                    <input id="bakeryNameId" type="text" value="Phil's Test Bakery">
+                    <button id="saveBakeryNameId">Save</button>
+                </p>
+
+                <p>
+                    <label for="apiCheckboxId">Use API?</label>
+                    <input id="apiCheckboxId" type="checkbox" value="on" checked>
+                </p>
+            </section>
+        </div>
+        
+        <!-- Cookie Image -->
+        <div id="cookieImage" class="box">
+
+            <section id="cookieImageSection">
+                <a href="javascript:void(0)" id="cookie">
+                    <img src="https://orteil.dashnet.org/cookieclicker/img/icon.png">
+                </a>
+            </section>
+        </div>
+
+        <!-- Settings -->
+        <div id="settings" class="box">
+            <section id="showSettings">
+                
+                <form id="changeBackgroundFormId" name="changeBackgroundFormName">
+
+                    <p>
+                        <label for="colourName">Choose a colour: </label>
+                        <input id="colourId" name="colourName" type="color">
+                    </p>
+                    
+                    <p>
+                        <button id="buttonId" name="buttonName" type="submit">Change background colour</button>
+                    </p>
+                </form>
+            </section>
+        </div>
+        
+        <!-- Cookie Details -->
+        <div id="cookieDetails" class="box">
+
+            <section id="mainCookieDetailsSection">
+                       
+                <p>
+                    <label for="numberOfCookies">Number of cookies:</label><input type="text" id="numberOfCookies">
+                </p>
+
+                <p>
+                    <label for="cookiesPerSecond">Cookies per second:</label><input type="text" id="cookiesPerSecond">
+                </p>
+                
+            </section>
+            
+            <section id="cookieDetailsSection"></section>
+        </div>
+        
+        <!-- Upgrades -->
+        <div id="upgrades" class="box">
+            <section id="upgrades"></section>
+        </div>
+        
+        <!-- Upgrade Details -->
+        <div id="upgradeDetails" class="box">
+            <section id="upgradeDetailsBoxId">test</section>
+        </div>
+    </div>
+</body>
+</html>
