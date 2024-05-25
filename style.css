@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body{
+    background-color: aqua;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box{
+    border: 1px white solid;
+}
+
+/* TIME */
+/**************************************************************************************/
+#time{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+    #clock{
+        font-family: "Orbitron", sans-serif;
+        font-size: 40px;
+    }
+
+/* BAKERY NAME */
+/**************************************************************************************/
+#bakeryName{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+/* COOKIE IMAGE */
+/**************************************************************************************/
+#cookieImage{
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+}
+
+    img{
+        height: 300px;
+        width: auto;
+    }
+
+/* SETTINGS */
+/**************************************************************************************/
+#settings{
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+}
+
+/* RESET */
+/**************************************************************************************/
+
+#reset{
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 1;
+}
+
+
+/* COOKIE DETAILS */
+/**************************************************************************************/
+#cookieDetails{
+    grid-column: 3 / span 4;
+    grid-row: 1 / span 4;
+}
+    #cookieDetails label{
+        display:inline-block;
+        width: 250px;
+    }
+
+    #cookieDetails input{
+        width: 200px;
+    }
+
+/* UPGRADES */
+/**************************************************************************************/
+#upgrades{
+    grid-column: 7 / span 2;
+    grid-row: 2 / span 4; 
+}
+
+    .upgradeButton{
+    width: 250px;
+    }
+
+/* UPGRADE DETAILS */
+/**************************************************************************************/
+#upgradeDetails{
+    grid-column: 3 / span 4;
+    grid-row: 5 / span 1;
+}
+
+    #upgradeDetailsBoxId{
+        visibility:hidden;
+    }
+
+    #upgradeDetailsBoxId img{
+        height: auto;
+        width: 90px;
+        display: block;
+    }
+
