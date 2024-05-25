@@ -291,7 +291,7 @@ async function fetchDataAPI(){
 
             let newLabel = document.createElement("label");
             newLabel.setAttribute("for", "numberOf" + purchasedUpgrades[i].name);
-            newLabel.innerText = `Number of ${purchasedUpgrades[i].name}s:`;
+            newLabel.innerText = `Number of ${purchasedUpgrades[i].name}s purchased:`;
 
             let newInput = document.createElement("input");
             newInput.setAttribute("type", "text");
